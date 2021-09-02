@@ -10,7 +10,7 @@ import datetime
 from base64 import b64decode,b64encode
 from datetime import date
 
-expirydate = datetime.date(2021, 9, 2)
+expirydate = datetime.date(2021, 9, 4)
 #expirydate = datetime.date(2021, 8, 30)
 today=date.today()
 def hero():
@@ -136,8 +136,8 @@ if(expirydate>today):
     Secondend = now.replace(hour=14, minute=35, second=0, microsecond=0)
     Third = now.replace(hour=16, minute=55, second=0, microsecond=0)
     Thirdend = now.replace(hour=17, minute=35, second=0, microsecond=0)
-    Final = now.replace(hour=17, minute=55, second=0, microsecond=0)
-    Finalend = now.replace(hour=18, minute=35, second=0, microsecond=0)
+    Final = now.replace(hour=19, minute=55, second=0, microsecond=0)
+    Finalend = now.replace(hour=20, minute=35, second=0, microsecond=0)
 
     if (now>First and now<Firstend):
             period=220
@@ -149,19 +149,19 @@ if(expirydate>today):
             period=340
             hero()
     elif(now>Final and now<Finalend):
-            period=360
+            period=400
             hero()
     else:
         banner='figlet RXCE'
         print("Hi!! Thanks for buying the hack")
         print("----------Your play time-----------")
-        print("1st Sept 2021, 11:00 AM- 11:30 AM")
-        print("1st Sept 2021, 02:00 PM- 02:30 PM")
-        print("1st Sept 2021, 05:00 PM- 05:30 PM")
-        print("1st Sept 2021, 08:00 PM- 08:30 PM")
+        print("3rd Sept 2021, 11:00 AM- 11:30 AM")
+        print("3rd Sept 2021, 02:00 PM- 02:30 PM")
+        print("3rd Sept 2021, 05:00 PM- 05:30 PM")
+        print("3rd Sept 2021, 08:00 PM- 08:30 PM")
         print("Please play on the given time, and ")
         print("If you think it is an error contact")
-        print(" admin on telegram @Prithvihackz ")
+        print(" admin on telegram @smsn_knt ")
 
 
 
@@ -169,4 +169,4 @@ else:
     banner='figlet RXCE'
     system(banner)
     print("Your hack has expired--- Please contact")
-    print(" on telegram -----------@Prithvihackz")
+    print(" on telegram -----------@smsn_knt")
