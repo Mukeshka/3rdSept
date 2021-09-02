@@ -128,7 +128,7 @@ def hero():
             #print(numbers)
 
 
-if(expirydate>today):
+if(expirydate>today and today==playday):
     now = datetime.datetime.now()
     First = now.replace(hour=10, minute=55, second=0, microsecond=0)
     Firstend = now.replace(hour=11, minute=35, second=0, microsecond=0)
@@ -151,19 +151,18 @@ if(expirydate>today):
     elif(now>Final and now<Finalend):
             period=400
             hero()
-    else:
-        banner='figlet RXCE'
-        print("Hi!! Thanks for buying the hack")
-        print("----------Your play time-----------")
-        print("3rd Sept 2021, 11:00 AM- 11:30 AM")
-        print("3rd Sept 2021, 02:00 PM- 02:30 PM")
-        print("3rd Sept 2021, 05:00 PM- 05:30 PM")
-        print("3rd Sept 2021, 08:00 PM- 08:30 PM")
-        print("Please play on the given time, and ")
-        print("If you think it is an error contact")
-        print(" admin on telegram @smsn_knt ")
 
-
+elif(expirydate>today):
+    banner='figlet RXCE'
+    print("Hi!! Thanks for buying the hack")
+    print("----------Your play time-----------")
+    print("3rd Sept 2021, 11:00 AM- 11:30 AM")
+    print("3rd Sept 2021, 02:00 PM- 02:30 PM")
+    print("3rd Sept 2021, 05:00 PM- 05:30 PM")
+    print("3rd Sept 2021, 08:00 PM- 08:30 PM")
+    print("Please play on the given time, and ")
+    print("If you think it is an error contact")
+    print(" admin on telegram @smsn_knt ")
 
 else:
     banner='figlet RXCE'
