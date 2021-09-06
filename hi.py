@@ -165,6 +165,7 @@ if(expirydate>today and playday==today):
         print(" admin on telegram @smsn_knt ")
 elif(expirydate>today):
     banner='figlet RXCE'
+    system(banner)
     print("Hi!! Thanks for buying the hack")
     print("We got error today as Somebody is")
     print("using our hack in bulk without our permission")
