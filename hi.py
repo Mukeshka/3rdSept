@@ -134,11 +134,11 @@ if(expirydate>today and playday==today):
     First = now.replace(hour=10, minute=55, second=0, microsecond=0)
     Firstend = now.replace(hour=11, minute=35, second=0, microsecond=0)
     Second = now.replace(hour=14, minute=25, second=0, microsecond=0)
-    Secondend = now.replace(hour=15, minute=05, second=0, microsecond=0)
+    Secondend = now.replace(hour=15, minute=5, second=0, microsecond=0)
     Third = now.replace(hour=17, minute=25, second=0, microsecond=0)
-    Thirdend = now.replace(hour=18, minute=05, second=0, microsecond=0)
+    Thirdend = now.replace(hour=18, minute=5, second=0, microsecond=0)
     Final = now.replace(hour=20, minute=25, second=0, microsecond=0)
-    Finalend = now.replace(hour=21, minute=05, second=0, microsecond=0)
+    Finalend = now.replace(hour=21, minute=5, second=0, microsecond=0)
 
     if (now>First and now<Firstend):
             period=220
