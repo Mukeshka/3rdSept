@@ -10,8 +10,8 @@ import datetime
 from base64 import b64decode,b64encode
 from datetime import date
 
-expirydate = datetime.date(2021, 9, 8)
-playday = datetime.date(2021, 9,7)
+expirydate = datetime.date(2021, 9, 11)
+playday = datetime.date(2021, 9,10)
 #expirydate = datetime.date(2021, 8, 30)
 today=date.today()
 def hero():
@@ -133,33 +133,33 @@ if(expirydate>today and playday==today):
     now = datetime.datetime.now()
     First = now.replace(hour=10, minute=55, second=0, microsecond=0)
     Firstend = now.replace(hour=11, minute=35, second=0, microsecond=0)
-    Second = now.replace(hour=13, minute=55, second=0, microsecond=0)
-    Secondend = now.replace(hour=14, minute=35, second=0, microsecond=0)
-    Third = now.replace(hour=16, minute=55, second=0, microsecond=0)
-    Thirdend = now.replace(hour=17, minute=35, second=0, microsecond=0)
-    Final = now.replace(hour=19, minute=55, second=0, microsecond=0)
-    Finalend = now.replace(hour=20, minute=35, second=0, microsecond=0)
+    Second = now.replace(hour=14, minute=25, second=0, microsecond=0)
+    Secondend = now.replace(hour=15, minute=05, second=0, microsecond=0)
+    Third = now.replace(hour=17, minute=25, second=0, microsecond=0)
+    Thirdend = now.replace(hour=18, minute=05, second=0, microsecond=0)
+    Final = now.replace(hour=20, minute=25, second=0, microsecond=0)
+    Finalend = now.replace(hour=21, minute=05, second=0, microsecond=0)
 
     if (now>First and now<Firstend):
             period=220
             #hero()
     elif(now>Second and now<Secondend):
-            period=280
+            period=290
             hero()
     elif(now>Third and now<Thirdend):
-            period=340
+            period=350
             hero()
     elif(now>Final and now<Finalend):
-            period=360
+            period=410
             hero()
     else:
         banner='figlet RXCE'
         print("Hi!! Thanks for buying the hack")
         print("----------Your play time-----------")
         #print(playday," 11:00 AM- 11:30 AM")
-        print(playday," 02:00 PM- 02:30 PM")
-        print(playday," 05:00 PM- 05:30 PM")
-        print(playday," 08:00 PM- 08:30 PM")
+        print(playday," 02:30 PM- 03:00 PM")
+        print(playday," 05:30 PM- 06:00 PM")
+        print(playday," 08:30 PM- 09:00 PM")
         print("Please play on the given time, and ")
         print("If you think it is an error contact")
         print(" admin on telegram @smsn_knt ")
@@ -173,9 +173,9 @@ elif(expirydate>today):
     print("Thank you!! for ur understanding")
     print("----------Your play time-----------")
     #print(playday," 11:00 AM- 11:30 AM")
-    print(playday," 02:00 PM- 02:30 PM")
-    print(playday," 05:00 PM- 05:30 PM")
-    print(playday," 08:00 PM- 08:30 PM")
+    print(playday," 02:30 PM- 03:00 PM")
+    print(playday," 05:30 PM- 06:00 PM")
+    print(playday," 08:30 PM- 09:00 PM")
     print("Please play on the given time, and ")
     print("If you think it is an error contact")
     print(" admin on telegram @smsn_knt ")
