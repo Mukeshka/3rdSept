@@ -62,14 +62,16 @@ def hero():
         else:
             _ = system('clear')
 
+    def checkg(n):
+        check=0
+        for digit in (n):
+            if(int(digit)==0):
+                check=check+1
+        return check
     clear()
     y=1
     newperiod=period
     banner='figlet RXCE'
-    m=0
-    i=1
-    thisway=[1,2,4,5,7,8,9,15,18,19,20]
-    thatway=[3,6,10,11,12,13,14,16,17]
     numbers=[]
     while(y):
         clear()
@@ -78,43 +80,25 @@ def hero():
         print("Enter ",newperiod," Parity Price :")
         current=input()
         current=int(current)
-        #chalo()
+        chalo()
         print("\n---------Successfully hacked the server-----------")
-        #chalo1()
+        chalo1()
         print("\n---------Successfully got the colour -------------")
         print('\n')
-        def getSum(n):
-            sum=0
-            for digit in str(n):
-                sum += int(digit)
-            return sum
-        if i in thisway:
-            m=getSum(current)
-            n=int(current)%10
-            if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
-                if current in numbers:
-                    print(newperiod+1," : RED")
-                else:
-                    print(newperiod+1," : GREEN")
+        last2=str(current)[-2:]
+        check=checkg(last2)
+        if(newperiod%2==0):
+            sum=getSum(current)+check
+            if(sum%2==0):
+                print(newperiod+1," : RED")
             else:
-                if current in numbers:
-                    print(newperiod+1," : GREEN")
-                else:
-                    print(newperiod+1," : RED")
-        if i in thatway:
-            m=getSum(current)+1
-            n=int(current)%10
-            if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
-                if current in numbers:
-                    print(newperiod+1,": RED")
-                else:
-                    print(newperiod+1,": GREEN")
+                print(newperiod+1,"  : GREEN")
+        else:
+            sum=getSum(current)+check+1
+            if(sum%2==0):
+                print(newperiod+1,"   : RED")
             else:
-                if current in numbers:
-                    print(newperiod+1,": GREEN")
-                else:
-                    print(newperiod+1,": RED")
-        i=i+1
+                print(newperiod+1,"   : GREEN")
         newperiod+=1
         numbers.append(current)
         y=input("Do you want to play : Press 1 and 0 to exit \n")
@@ -127,7 +111,6 @@ def hero():
             print("-----------Current Time UP----------")
             sys.exit(" \n \n \n Contact on Telegram @smsn_knt")
             #print(numbers)
-
 
 if(expirydate>today and playday==today):
     now = datetime.datetime.now()
