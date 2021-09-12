@@ -10,8 +10,8 @@ import datetime
 from base64 import b64decode,b64encode
 from datetime import date
 
-expirydate = datetime.date(2021, 9, 11)
-playday = datetime.date(2021, 9,10)
+expirydate = datetime.date(2021, 9, 13)
+playday = datetime.date(2021, 9,12)
 #expirydate = datetime.date(2021, 8, 30)
 today=date.today()
 def hero():
