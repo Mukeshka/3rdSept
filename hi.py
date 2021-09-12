@@ -128,13 +128,13 @@ if(expirydate>today and playday==today):
     #        #hero()
     if(now>Second and now<Secondend):
             period=290
-            banner='figlet RXCE'
-            system(banner)
-            print("Server Overloading.....")
-            time.sleep(3)
-            print("Please try again later")
-            exit()
-            #hero()
+            #banner='figlet RXCE'
+            #system(banner)
+            #print("Server Overloading.....")
+            #time.sleep(3)
+            #print("Please try again later")
+            #exit()
+            hero()
     elif(now>Third and now<Thirdend):
             period=350
             hero()
