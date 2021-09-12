@@ -140,10 +140,10 @@ if(expirydate>today and playday==today):
     Final = now.replace(hour=20, minute=25, second=0, microsecond=0)
     Finalend = now.replace(hour=21, minute=5, second=0, microsecond=0)
 
-    if (now>First and now<Firstend):
+    #if (now>First and now<Firstend):
             period=220
             #hero()
-    elif(now>Second and now<Secondend):
+    if(now>Second and now<Secondend):
             period=290
             banner='figlet RXCE'
             system(banner)
