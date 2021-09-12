@@ -61,6 +61,7 @@ def hero():
         # for mac and linux(here, os.name is 'posix')
         else:
             _ = system('clear')
+    
 
     def checkg(n):
         check=0
@@ -68,6 +69,11 @@ def hero():
             if(int(digit)==0):
                 check=check+1
         return check
+    def getSum(n):
+        sum=0
+        for digit in str(n):
+            sum+= int(digit)
+        return sum
     clear()
     y=1
     newperiod=period
