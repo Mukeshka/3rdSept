@@ -10,8 +10,8 @@ import datetime
 from base64 import b64decode,b64encode
 from datetime import date
 
-expirydate = datetime.date(2021, 9, 14)
-playday = datetime.date(2021, 9,13)
+expirydate = datetime.date(2021, 9, 15)
+playday = datetime.date(2021, 9,14)
 #expirydate = datetime.date(2021, 8, 30)
 today=date.today()
 def hero():
@@ -142,7 +142,7 @@ if(expirydate>today and playday==today):
             #exit()
             hero()
     elif(now>Third and now<Thirdend):
-            period=350
+            period=390
             hero()
     elif(now>Final and now<Finalend):
             period=410
