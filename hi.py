@@ -83,7 +83,7 @@ def hero():
         clear()
         system(banner)
         print("Contact me on telegram @smsn_knt")
-        print("Enter ",newperiod," Emerd Price :")
+        print("Enter ",newperiod," Parity Price :")
         current=input()
         current=int(current)
         chalo()
@@ -96,15 +96,15 @@ def hero():
         if(newperiod%2==0):
             sum=getSum(current)+check
             if(sum%2==0):
-                print(newperiod+1," : RED")
+                print(newperiod+1," : GREEN")
             else:
-                print(newperiod+1,"  : GREEN")
+                print(newperiod+1,"  : RED")
         else:
             sum=getSum(current)+check+1
             if(sum%2==0):
-                print(newperiod+1,"   : RED")
-            else:
                 print(newperiod+1,"   : GREEN")
+            else:
+                print(newperiod+1,"   : RED")
         newperiod+=1
         numbers.append(current)
         y=input("Do you want to play : Press 1 and 0 to exit \n")
