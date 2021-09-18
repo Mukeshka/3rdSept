@@ -82,6 +82,7 @@ def hero():
     while(y):
         clear()
         system(banner)
+        print("Weekly members play PARITY")
         print("Contact me on telegram @smsn_knt")
         print("Enter ",newperiod," Parity Price :")
         current=input()
