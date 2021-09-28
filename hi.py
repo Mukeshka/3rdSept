@@ -82,9 +82,9 @@ def hero():
     while(y):
         clear()
         system(banner)
-        print("Weekly members play PARITY")
+        print("Weekly members play PARITY all other play BCONE")
         print("Contact me on telegram @smsn_knt")
-        print("Enter ",newperiod," Parity Price :")
+        print("Enter ",newperiod," BCONE Price :")
         current=input()
         current=int(current)
         chalo()
